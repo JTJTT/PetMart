@@ -1,0 +1,107 @@
+[
+    {
+        "item_id": 1,
+        "name": "Rope Tug Toy",
+        "animal_preference": "dog",
+        "quantity": 1,
+        "price": 10.99
+    },
+    {
+        "item_id": 2,
+        "name": "Feather Wand",
+        "animal_preference": "cat",
+        "quantity": 3,
+        "price": 3.99
+    },
+    {
+        "item_id": 3,
+        "name": "Tennis Ball",
+        "animal_preference": "dog",
+        "quantity": 3,
+        "price": 6.99
+    },
+    {
+        "item_id": 4,
+        "name": "Catnip Mouse",
+        "animal_preference": "cat",
+        "quantity": 5,
+        "price": 5.99
+    },
+    {
+        "item_id": 5,
+        "name": "Dog Chew Bone",
+        "animal_preference": "dog",
+        "quantity": 2,
+        "price": 12.99
+    },
+    {
+        "item_id": 6,
+        "name": "Laser Pointer",
+        "animal_preference": "cat",
+        "quantity": 1,
+        "price": 8.99
+    },
+    {
+        "item_id": 7,
+        "name": "tiny mirror",
+        "animal_preference": "bird",
+        "quantity": 2,
+        "price": 10.99
+    },
+    {
+        "item_id": 8,
+        "name": "Cat Tree",
+        "animal_preference": "cat",
+        "quantity": 1,
+        "price": 79.99
+    },
+    {
+        "item_id": 9,
+        "name": "Running Wheel",
+        "animal_preference": "small rodent",
+        "quantity": 1,
+        "price": 15.99
+    },
+    {
+        "item_id": 10,
+        "name": "Hampster Ball",
+        "animal_preference": "small rodent",
+        "quantity": 1,
+        "price": 9.99
+    },
+    {
+        "item_id": 11,
+        "name": "Bird Swing",
+        "animal_preference": "bird",
+        "quantity": 2,
+        "price": 6.99
+    },
+    {
+        "item_id": 12,
+        "name": "Volcano Bubbler",
+        "animal_preference": "fish",
+        "quantity": 1,
+        "price": 17.99
+    },
+    {
+        "item_id": 13,
+        "name": "Bell Balls",
+        "animal_preference": "cat",
+        "quantity": 10,
+        "price": 4.99
+    },
+    {
+        "item_id": 14,
+        "name": "Squeaky Toy",
+        "animal_preference": "dog",
+        "quantity": 3,
+        "price": 14.99
+    },
+    {
+        "item_id": 15,
+        "name": "Tinsel Balls",
+        "animal_preference": "cat",
+        "quantity": 10,
+        "price": 3.99
+    }
+]
