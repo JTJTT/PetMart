@@ -1,13 +1,16 @@
 import './App.css'
-import Header from './components/header/header.jsx'
+import MyNav from './components/header/Header';
+import 'bootstrap/dist/css/bootstrap.css';
+import HomePage from './components/Homepage/HomePage';
 
 function App() {
   return (
-    <body>
-      <div className="App">
-        <Header />
-      </div>
-    </body>
+      <>
+        <div>
+          <MyNav />
+          <HomePage />
+        </div>
+      </>
   );
 }
 
