@@ -15,11 +15,11 @@ Make it spin
     }
 }
 .spin-logo {
-    animation: spin 5s linear infinite;
+    animation: spin 6s linear infinite;
 }
 
 .navbar-logo {
-    width: 80px;
+    width: 60px;
     height: auto;
 }
 .products {

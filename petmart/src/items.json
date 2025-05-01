@@ -3,35 +3,35 @@
         {
             "id": 1,
             "animal": "dog",
-            "name": "Squeaky Toy",
+            "name": " Dog Squeaky Toy",
             "price": 5.99,
             "stock": 10
         },
         {
             "id": 2,
             "animal": "dog",
-            "name": "Rope Tug",
+            "name": "Dog Rope Tug",
             "price": 7.99,
             "stock": 10
         },
         {
             "id": 3,
             "animal": "cat",
-            "name": "Mouse",
+            "name": " Cat Mouse Toy",
             "price": 4.99,
             "stock": 10
         },
         {
             "id": 4,
             "animal": "cat",
-            "name": "Laser Pointer",
+            "name": "Cat Laser Pointer",
             "price": 8.99,
             "stock": 10
         },
         {
             "id": 5,
             "animal": "cat",
-            "name": "Feather Wand",
+            "name": "Cat Feather Wand",
             "price": 15.99,
             "stock": 10
         }
@@ -40,7 +40,7 @@
         {
             "id": 21,
             "animal": "dog",
-            "name": "Rain Coat",
+            "name": "Dog Rain Coat",
             "price": 27.99,
             "stock": 10
         },
@@ -54,14 +54,14 @@
         {
             "id": 23,
             "animal": "dog",
-            "name": "18k Gold Chain",
+            "name": "Dog 18k Gold Chain",
             "price": 499.99,
             "stock": 1
         },
         {
             "id": 24,
             "animal": "cat",
-            "name": "Rain Coat",
+            "name": "Cat Rain Coat",
             "price": 25.99,
             "stock": 10
         },
@@ -91,21 +91,21 @@
         {
             "id": 43,
             "animal": "dog",
-            "name": "Bacon Bites",
+            "name": "Dog Bacon Bites",
             "price": 12.99,
             "stock": 10
         },
         {
             "id": 44,
             "animal": "cat",
-            "name": "Beef Paste Treat",
+            "name": "Cat Beef Paste Treat",
             "price": 1.99,
             "stock": 10
         },
         {
             "id": 45,
             "animal": "cat",
-            "name": "Fruit Bites",
+            "name": "Cat Fruit Bites",
             "price": 9.99,
             "stock": 10
         }
