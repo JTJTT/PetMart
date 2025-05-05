@@ -19,17 +19,19 @@ const Cart = () => {
 
       setCartItems((prevItems) => {
         const existingItem = prevItems.find((item) => item.item_id === product.item_id);
-        const updatedCart = existingItem
-          ? prevItems.map((item) =>
-              item.item_id === product.item_id
-                ? { ...item, quantity: item.quantity + 1 }
-                : item
-            )
-          : [...prevItems, { ...product, quantity: 1 }];
-        localStorage.setItem('cartItems', JSON.stringify(updatedCart));
-        return updatedCart;
-      });
 
+        if (existingItem) {
+          return prevItems.map((item) =>
+            item.item_id === product.item_id
+              ? { ...item, quantity: item.quantity = 1 }
+              : item
+          );
+        } else {
+          const updatedCart = [...prevItems, { ...product, quantity: 1 }];
+          localStorage.setItem('cartItems', JSON.stringify(updatedCart));
+          return updatedCart;
+        }
+      });
       navigate('/cart', { replace: true });
     }
   }, [location.state, navigate]);
@@ -70,7 +72,7 @@ const Cart = () => {
         <h1>Shopping Cart</h1>
       </header>
       {cartItems.length === 0 ? (
-        <p classname="noItems">Your cart is empty.</p>
+        <p className="noItems">Your cart is empty.</p>
       ) : (
         <div>
           <table className="cart-table">
@@ -106,6 +108,11 @@ const Cart = () => {
               ))}
             </tbody>
           </table>
+          <div className="cart-summary">
+            <p>Subtotal: ${calculateSubtotal().toFixed(2)}</p>
+            <p>Tax (6%): ${calculateTax().toFixed(2)}</p>
+            <p>Total: ${calculateTotal().toFixed(2)}</p>
+          </div>
           <button
             className="checkout-button"
             onClick={() =>
