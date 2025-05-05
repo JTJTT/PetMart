@@ -4,7 +4,9 @@ import products from './Products.json'
 function Product() {
   return (
     <div className="Product">
-      <h1>Products</h1>
+
+      <header className="ProductHeader">Products</header>
+
       <div className="ProductList">
         {products.map((product) => (
           <div key={product.item_id} className="ProductBox">

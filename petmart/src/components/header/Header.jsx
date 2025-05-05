@@ -14,12 +14,6 @@ function MyNav() {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/product">Products</Nav.Link>
-            <NavDropdown title="Products" id="basic-nav-dropdown">
-              <NavDropdown.Item href="dog.html">Dog</NavDropdown.Item>
-              <NavDropdown.Item href="cat.html">Cat</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="iguana.html">Iguana</NavDropdown.Item>
-            </NavDropdown>
           </Nav>
           <Nav className="ms-auto">
             <Nav.Link href="/cart">Cart</Nav.Link>

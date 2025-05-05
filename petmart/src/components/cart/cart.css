@@ -1,5 +1,5 @@
 .cart {
-    padding: 20px;
+
     font-family: Arial, sans-serif;
 }
 
@@ -16,13 +16,15 @@
 
 .cart-table th,
 .cart-table td {
-    border: 1px solid #ddd;
+    border: 0px;
+    background-color: #fff8dc;
     padding: 10px;
     text-align: center;
 }
 
 .cart-table th {
-    background-color: #f4f4f4;
+    background-color: #fff3cd;
+    border-bottom:1px solid #8b5a2b;
 }
 
 .cart-table input[type="number"] {
@@ -51,4 +53,28 @@ button {
 
 button:hover {
     background-color: #ff1a1a;
+}
+
+.checkout-button {
+    background-color: #8b5a2b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #6b4220;
+}
+
+.cartheader {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    font-size: 2rem;
+    background-color: #8b5a2b;
 }

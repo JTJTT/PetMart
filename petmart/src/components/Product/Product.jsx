@@ -1,5 +1,5 @@
 import './Product.css';
-import products from './Products.json';
+import products from '../../Products.json';
 
 function Product() {
   return (
@@ -12,7 +12,7 @@ function Product() {
           <div key={product.item_id} className="ProductBox">
             <h2>{product.name}</h2>
             <p>Animal Preference: {product.animal_preference}</p>
-            <p>Quantity: {product.quantity}</p>
+            <p>Quantity: {product.quantityPerItem}</p>
             <p><strong>Price: {product.price}</strong></p>
             <button 
             className="AddToCartButton"
