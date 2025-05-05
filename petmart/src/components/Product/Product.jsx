@@ -1,7 +1,18 @@
 import './Product.css';
 import products from '../../Products.json';
+import { useNavigate } from 'react-router-dom';
 
 function Product() {
+  const navigate = useNavigate();
+
+  const handleAddToCart = (product) => {
+    navigate('/cart', {
+      state: {
+        product,
+      },
+    });
+  };
+
   return (
     <div className="Product">
       <header className="ProductHeader">
@@ -16,8 +27,8 @@ function Product() {
             <p><strong>Price: {product.price}</strong></p>
             <button 
             className="AddToCartButton"
-            onClick={() => console.log(`Added ${product.name} to cart`)}
-            >Add to Cart</button>
+            onClick={() => handleAddToCart(product)}>
+            Add to Cart</button>
           </div>
         ))}
       </div>

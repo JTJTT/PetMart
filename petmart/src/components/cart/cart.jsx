@@ -1,15 +1,38 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './cart.css';
 import products from '../../Products.json';
 
 const Cart = () => {
   const TAX_RATE = 0.06;
   const navigate = useNavigate();
+  const location = useLocation();
 
-  const [cartItems, setCartItems] = useState(
-    products.map((item) => ({ ...item, quantity: item.quantity || 1 }))
-  );
+  const [cartItems, setCartItems] = useState(() => {
+    const savedCart = localStorage.getItem('cartItems');
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
+
+  useEffect(() => {
+    if (location.state?.product) {
+      const product = location.state.product;
+
+      setCartItems((prevItems) => {
+        const existingItem = prevItems.find((item) => item.item_id === product.item_id);
+        const updatedCart = existingItem
+          ? prevItems.map((item) =>
+              item.item_id === product.item_id
+                ? { ...item, quantity: item.quantity + 1 }
+                : item
+            )
+          : [...prevItems, { ...product, quantity: 1 }];
+        localStorage.setItem('cartItems', JSON.stringify(updatedCart));
+        return updatedCart;
+      });
+
+      navigate('/cart', { replace: true });
+    }
+  }, [location.state, navigate]);
 
   const calculateSubtotal = () => {
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
@@ -24,24 +47,30 @@ const Cart = () => {
   };
 
   const updateQuantity = (id, quantity) => {
-    setCartItems((prevItems) =>
-      prevItems.map((item) =>
+    setCartItems((prevItems) => {
+      const updatedCart = prevItems.map((item) =>
         item.item_id === id ? { ...item, quantity: Math.max(1, quantity) } : item
-      )
-    );
+      );
+      localStorage.setItem('cartItems', JSON.stringify(updatedCart));
+      return updatedCart;
+    });
   };
 
   const removeItem = (id) => {
-    setCartItems((prevItems) => prevItems.filter((item) => item.item_id !== id));
+    setCartItems((prevItems) => {
+      const updatedCart = prevItems.filter((item) => item.item_id !== id);
+      localStorage.setItem('cartItems', JSON.stringify(updatedCart));
+      return updatedCart;
+    });
   };
 
   return (
     <div className="cart">
-<header className="cartheader">
-      <h1>Shopping Cart</h1>
-</header>
+      <header className="cartheader">
+        <h1>Shopping Cart</h1>
+      </header>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <p classname="noItems">Your cart is empty.</p>
       ) : (
         <div>
           <table className="cart-table">
