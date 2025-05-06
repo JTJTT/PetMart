@@ -1,0 +1,8 @@
+RewriteEngine On # Enable RewriteEngine
+
+# Don't rewrite if the request is for an actual file or folder
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect all requests to index.html
+RewriteRule ^ index.html [QSA,L]

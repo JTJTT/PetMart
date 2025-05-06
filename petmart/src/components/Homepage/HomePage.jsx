@@ -19,7 +19,7 @@ const HomePage = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="/images/petBannerImg.png"
+                            src="/public/petBannerImg.png"
                             alt="First slide"
                         />
                         <Carousel.Caption>
@@ -29,7 +29,7 @@ const HomePage = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="/images/petBannerImg2.png"
+                            src="/public/petBannerImg2.png"
                             alt="Second slide"
                         />
                         <Carousel.Caption>
@@ -39,7 +39,7 @@ const HomePage = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="/images/petBannerImg3.png"
+                            src="/public/petBannerImg3.png"
                             alt="Third slide"
                         />
                         <Carousel.Caption>
@@ -54,7 +54,7 @@ const HomePage = () => {
                 <div className="row row-cols-1 row-cols-md-4 g-4 categories-grid">
                     <div className="col">
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="/images/dog.png" alt="Dogs" />
+                            <Card.Img variant="top" src="/public/dog.png" alt="Dogs" />
                             <Card.Body>
                                 <Card.Title>Dogs</Card.Title>
                                 <Card.Text>
@@ -66,7 +66,7 @@ const HomePage = () => {
                     </div>
                     <div className="col">
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="/images/cat.png" alt="Cats" />
+                            <Card.Img variant="top" src="/public/cat.png" alt="Cats" />
                             <Card.Body>
                                 <Card.Title>Cats</Card.Title>
                                 <Card.Text>
@@ -78,7 +78,7 @@ const HomePage = () => {
                     </div>
                     <div className="col">
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="/images/bird.png" alt="Birds" />
+                            <Card.Img variant="top" src="/public/bird.png" alt="Birds" />
                             <Card.Body>
                                 <Card.Title>Birds</Card.Title>
                                 <Card.Text>
@@ -90,7 +90,7 @@ const HomePage = () => {
                     </div>
                     <div className="col">
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="/images/fish.png" alt="Fish" />
+                            <Card.Img variant="top" src="/public/fish.png" alt="Fish" />
                             <Card.Body>
                                 <Card.Title>Fish</Card.Title>
                                 <Card.Text>
@@ -108,7 +108,7 @@ const HomePage = () => {
                 <div className="row row-cols-1 row-cols-md-3 g-4 popular-products-grid">
                     <div className="col">
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="/images/dogFood.png" alt="Dog Food" />
+                            <Card.Img variant="top" src="/public/dogFood.png" alt="Dog Food" />
                             <Card.Body>
                                 <Card.Title>Dog Food</Card.Title>
                                 <Card.Text>$20.00</Card.Text>
@@ -118,7 +118,7 @@ const HomePage = () => {
                     </div>
                     <div className="col">
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="/images/catToy.png" alt="Cat Toy" />
+                            <Card.Img variant="top" src="/public/catToy.png" alt="Cat Toy" />
                             <Card.Body>
                                 <Card.Title>Cat Toy</Card.Title>
                                 <Card.Text>$10.00</Card.Text>
@@ -128,7 +128,7 @@ const HomePage = () => {
                     </div>
                     <div className="col">
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="/images/birdCage.png" alt="Bird Cage" />
+                            <Card.Img variant="top" src="/public/birdCage.png" alt="Bird Cage" />
                             <Card.Body>
                                 <Card.Title>Bird Cage</Card.Title>
                                 <Card.Text>$50.00</Card.Text>

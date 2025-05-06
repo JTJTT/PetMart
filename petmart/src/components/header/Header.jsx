@@ -7,7 +7,7 @@ function MyNav() {
     <Navbar bg="warning-subtle" expand="lg" sticky="top" variant="light">
       <Container fluid>
         <Navbar.Brand>
-          <img className="navbar-logo spin-logo" src="/images/PetmartLogo.png" alt="Logo" />
+          <img className="navbar-logo spin-logo" src="/public/PetmartLogo.png" alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
         <Navbar.Collapse id="navbarSupportedContent">
