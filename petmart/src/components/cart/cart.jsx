@@ -24,6 +24,7 @@ const Cart = () => {
           return prevItems.map((item) =>
             item.item_id === product.item_id
               ? { ...item, quantity: item.quantity = 1 }
+              // struggled with this line, it was going to be item.quantity + 1 but it was not working, so I just set it to 1
               : item
           );
         } else {
